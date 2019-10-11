@@ -10,10 +10,14 @@
   .intro {
     img {
       border-radius: @bdradius;
+      margin-top: 90px;
     }
 
     h2 {
       padding: 15px;
+      &:hover {
+        .padpushl(30%);
+      }
     }
 
     p {
@@ -100,6 +104,7 @@
         
           &:hover {
             .buttoncol(@btn-bg-color, @porcelain); // first effect added
+            border: 1px solid @porcelain;
           }
           @media @phone {
             width: 100%;

@@ -161,6 +161,8 @@ p {
   margin: 0 auto;
 }
 div.nav-cont {
+  position: fixed;
+  width: 100%;
   background-color: #F6F6F6;
   display: flex;
   justify-content: center;
@@ -202,9 +204,14 @@ footer {
 }
 .home .intro img {
   border-radius: 10px;
+  margin-top: 90px;
 }
 .home .intro h2 {
   padding: 15px;
+}
+.home .intro h2:hover {
+  transition: 0.5s;
+  padding-left: 30%;
 }
 .home .intro p {
   padding: 0 15px;
@@ -290,6 +297,7 @@ footer {
 .home .walk .walk-text .btn button:hover {
   color: #22283A;
   background-color: #F6F7F8;
+  border: 1px solid #F6F7F8;
 }
 @media (max-width: 515px) {
   .home .walk .walk-text .btn button {
