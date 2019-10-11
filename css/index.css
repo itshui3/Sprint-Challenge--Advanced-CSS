@@ -260,9 +260,24 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
-@media (max-width: 515px) {
+@media (max-width: 680px) {
   .home .space-images img {
     width: 100%;
+  }
+}
+@media (max-width: 680px) {
+  .home .space-images .blast {
+    width: 44%;
+  }
+}
+@media (max-width: 515px) {
+  .home .space-images .blast {
+    width: 100%;
+  }
+}
+@media (max-width: 680px) {
+  .home .space-images .sky {
+    width: 44%;
   }
 }
 @media (max-width: 515px) {
@@ -270,7 +285,7 @@ footer {
     display: none;
   }
 }
-@media (max-width: 515px) {
+@media (max-width: 680px) {
   .home .space-images .launch {
     display: none;
   }
