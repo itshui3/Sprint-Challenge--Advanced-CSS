@@ -185,6 +185,12 @@ div.nav-cont nav a {
   color: #454A59;
   padding: 10px;
 }
+div.nav-cont nav a:hover {
+  color: #777a7e;
+}
+div.nav-cont nav a:focus {
+  padding-top: 3px;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -205,13 +211,34 @@ footer {
 .home .intro img {
   border-radius: 10px;
   margin-top: 90px;
+  max-width: 800px;
 }
-.home .intro h2 {
+.home .intro h2.liftoff {
   padding: 15px;
 }
-.home .intro h2:hover {
+.home .intro h2.liftoff span {
+  display: none;
+}
+.home .intro h2.liftoff:hover {
   transition: 0.5s;
-  padding-left: 30%;
+  padding-left: 50%;
+}
+.home .intro h2.liftoff:hover span {
+  display: inline;
+}
+.home .intro h2.sitdown {
+  padding: 15px;
+  text-align: right;
+}
+.home .intro h2.sitdown span {
+  display: none;
+}
+.home .intro h2.sitdown:hover {
+  transition: 0.5s;
+  padding-right: 50%;
+}
+.home .intro h2.sitdown:hover span {
+  display: inline;
 }
 .home .intro p {
   padding: 0 15px;
@@ -220,6 +247,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  align-items: center;
 }
 .home .space-images img {
   width: 28%;

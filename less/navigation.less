@@ -2,7 +2,7 @@
 div.nav-cont {
   position: fixed;
   width: 100%;
-  
+
   background-color: @nav-bg;
   .flex (center, column, center, no-wrap);
   h1 {
@@ -17,6 +17,12 @@ div.nav-cont {
       text-decoration: none;
       color: @nav-font;
       padding: 10px;
+      &:hover {
+        color: lighten(@main-font-color, 10%);
+      }
+      &:focus {
+        padding-top: 3px;
+      }
     }
   }
 
