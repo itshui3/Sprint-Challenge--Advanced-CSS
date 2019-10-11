@@ -96,15 +96,15 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-    @media @phone {
+    @media @tablet {
       .flex (center, column-reverse, initial, no-wrap);
       padding: 10px;
     }
 
     .walk-text {
       width: 50%;
-      @media @phone {
-        width: 100%;
+      @media @tablet {
+        width: 90%;
       }
       h3 {
         margin-bottom: 10px;
@@ -123,6 +123,10 @@
       }
 
       .btn {
+        @media @tablet {
+          width: 100%;
+          text-align: center;
+        }
         @media @phone {
           width: 100%;
           
@@ -138,6 +142,10 @@
             .buttoncol(@btn-bg-color, @porcelain); // first effect added
             border: 1px solid @porcelain;
           }
+          @media @tablet {
+            width: 50%;
+            padding: 10px;
+          }
           @media @phone {
             width: 100%;
             padding: 20px;
@@ -150,11 +158,12 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      @media @phone {
+      @media @tablet {
         width: 100%;
         margin-left: 0%;
         .margintb (10px, 10px);
       }
+
       img {
         width: 100%;
         height: auto;
