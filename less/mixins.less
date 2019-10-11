@@ -1,1 +1,39 @@
 // Mixins Here
+.flex (@jus, @dir, @alig, @wrap) { // .flex (@jus, @dir, @alig, @wrap);
+  display: flex;
+  justify-content: @jus;
+  flex-direction: @dir;
+  align-items: @alig;
+  flex-wrap: @wrap;
+}
+
+.margintb(@t, @b) {
+  margin-top: @t;
+  margin-bottom: @b;
+}
+
+.paddingtb(@t, @b) {
+  padding-top: @t;
+  padding-bottom: @b;
+}
+
+.buttoncol(@col, @bgcol) {
+  color: @col;
+  background-color: @bgcol;
+}
+
+
+.padpushl (@px) { // .padpushl (@px);
+  transition: 0.5s;
+  padding-left: @px;
+}
+
+.padpushr (@px) { // .padpushr (@px);
+  transition: 0.5s;
+  padding-right: @px;
+}
+
+.padpushb (@px) { // .padpushb (@px);
+  transition: 0.3s;
+  padding-bottom: @px;
+}

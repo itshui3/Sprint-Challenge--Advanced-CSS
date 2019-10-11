@@ -1,1 +1,30 @@
 // Navigation code here
+div.nav-cont {
+  position: fixed;
+  width: 100%;
+
+  background-color: @nav-bg;
+  .flex (center, column, center, no-wrap);
+  h1 {
+    font-size: 3rem;
+    padding: 10px;
+  }
+  nav {
+    opacity: 0.95;
+    .paddingtb(10px, 10px);
+    a {
+      line-height: 1.4;
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: @nav-font;
+      padding: 10px;
+      &:hover {
+        color: lighten(@main-font-color, 10%);
+      }
+      &:focus {
+        padding-top: 3px;
+      }
+    }
+  }
+
+}

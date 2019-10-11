@@ -1,11 +1,46 @@
 // Home Content
 
 .home {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .intro {
+    img {
+      border-radius: @bdradius;
+      margin-top: 90px;
+      max-width: 800px;
+      @media (max-width: 800px) {
+        width: 100%;
+      }
+    }
 
-    h2 {
+    h2.liftoff {
       padding: 15px;
+      span {
+        display: none;
+      }
+      &:hover {
+        .padpushl (50%);
+        span {
+          display: inline;
+        }
+      }
+    }
+    h2.sitdown {
+      padding: 15px;
+      text-align: right;
+      span {
+        display: none;
+      }
+      &:hover {
+        .padpushr (50%);
+        span {
+          display: inline;
+        }
+      }
     }
 
     p {
@@ -18,14 +53,41 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    align-items: center;
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @tablet {
+        width: 100%;
+      }
+    } // closes img
+    .blast {
+      @media @tablet {
+        width: 44%;
+      }
+      @media @phone {
+        width: 100%;
+      }
     }
-  }
+    .sky {
+      @media @tablet {
+        width: 44%;
+      }
+      @media @phone {
+        display: none;
+      }
+    }
+    .launch {
+      @media @tablet {
+        display: none;
+      }
+    }
+
+  } // closes space-images
+  
 
   .visit-planets {
     padding: 15px;
@@ -45,10 +107,16 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @tablet {
+      .flex (center, column-reverse, initial, no-wrap);
+      padding: 10px;
+    }
 
     .walk-text {
       width: 50%;
-
+      @media @tablet {
+        width: 90%;
+      }
       h3 {
         margin-bottom: 10px;
       }
@@ -57,18 +125,68 @@
         margin-bottom: 26px;
       }
 
+      .elmosays {
+        margin: 50px 0px;
+        color: #FFF;
+        &:active {
+          color: @elmored;
+        }
+      }
+
       .btn {
+        @media @tablet {
+          width: 100%;
+          text-align: center;
+        }
+        @media @phone {
+          width: 100%;
+          
+        }
+        button {
+          border: 1px solid @btn-bg-color;
+          border-radius: @bdradius;
+          padding: 20px;
+          font-size: 1.6rem;
+          .buttoncol(@porcelain, @btn-bg-color);
+        
+          &:hover {
+            .buttoncol(@btn-bg-color, @porcelain); // first effect added
+            border: 1px solid @porcelain;
+          }
+          @media @tablet {
+            width: 50%;
+            padding: 10px;
+          }
+          @media @phone {
+            width: 100%;
+            padding: 20px;
+          }
+        }        
       }
     }
+
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @tablet {
+        width: 100%;
+        margin-left: 0%;
+        .margintb (10px, 10px);
+      }
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+
+      .elmobump {
+        width: 90%;
+        &:hover {
+          position: relative;
+          transform: translate(5%, -5%);
+        }
       }
     }
   }
