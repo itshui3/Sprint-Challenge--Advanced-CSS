@@ -33,18 +33,28 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+
+
 An adaptive website 'adapts' to different screen sizes by shifting things around at specific breakpoints. A fully rseponsive site includes liquid %'s that adjust themselves on the fly at no particular point as well as adaptive breakpoints. This covers every kind of screensize as opposed to specific viewports. 
 
 2. Describe what it means to be mobile first vs desktop first.
+
+
 It just means to use min-width media queries so as to cascade the styling from lower width viewports outwards so that the desktop styles get added afterwards. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+
 It sets  the font-size to 10px for most screens that use the default medium text setting. This lets users choose how big they want their text instead of hardcoding it in so that they can't make any adjustments. When using REM units, the root font-size is taken and multiplied by the REM value. This makes coding in css easier than with using EM units because the cascade would get confusing after a while with EM units multiplying off each additional nesting. REM is consistent. 
 
 4. How would you describe preprocessing to someone new to CSS?
+
+
 The way CSS is written makes it really clunky if you want to style many webpages. Preprocessers are just added syntax functionality that allows webpage designers to organize their code better and write with functionality that normal css doesn't have. Then we use javascript to translate it back into a huge chunk of CSS. It's just an easier way to write. 
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+
 Nesting is my favorite. I like how it looks similar to HTML and it gives me clarity while pseudocoding. The part that gives me the most trouble is the finicky compiler. Today sometimes refreshing the browser wouldn't do anything, other times it would. It turned into a real issue because I couldn't tell if it was my code that was wonky or the browser, or something getting caught in the compiler. I'll be using live server something, that someone recommended after this. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
