@@ -1,6 +1,11 @@
 // Home Content
 
 .home {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .intro {
 
@@ -58,6 +63,18 @@
       }
 
       .btn {
+        button {
+          font-size: 1.6rem;
+          padding: 7px 20px;
+          border: 1px solid @btn-bg-color;
+          border-radius: @bdradius;
+          .buttoncol(@porcelain, @btn-bg-color);
+
+          &:active {
+            .buttoncol(@btn-bg-color, @porcelain);
+          }
+
+        }
       }
     }
 
