@@ -213,6 +213,11 @@ footer {
   margin-top: 90px;
   max-width: 800px;
 }
+@media (max-width: 800px) {
+  .home .intro img {
+    width: 100%;
+  }
+}
 .home .intro h2.liftoff {
   padding: 15px;
 }
