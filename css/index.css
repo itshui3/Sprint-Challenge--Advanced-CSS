@@ -175,6 +175,7 @@ div.nav-cont h1 {
   padding: 10px;
 }
 div.nav-cont nav {
+  opacity: 0.95;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -207,7 +208,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  opacity: 0.9;
 }
 .home .intro img {
   border-radius: 10px;
