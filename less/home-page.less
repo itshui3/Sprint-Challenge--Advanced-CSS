@@ -92,24 +92,23 @@
           
         }
         button {
-          font-size: 1.6rem;
-          padding: 7px 20px;
           border: 1px solid @btn-bg-color;
           border-radius: @bdradius;
-          .buttoncol(@porcelain, @btn-bg-color);
 
-          &:active {
+          font-size: 1.6rem;
+          .buttoncol(@porcelain, @btn-bg-color);
+        
+          &:hover {
             .buttoncol(@btn-bg-color, @porcelain); // first effect added
           }
-
           @media @phone {
             width: 100%;
-            padding: 30px;
+            padding: 20px;
           }
-
-        }
+        }        
       }
     }
+
 
     .walk-img {
       width: 46%;
@@ -117,6 +116,7 @@
       @media @phone {
         width: 100%;
         margin-left: 0%;
+        .margintb (10px, 10px);
       }
       img {
         width: 100%;
