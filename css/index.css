@@ -363,7 +363,10 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .walk .walk-img .elmobump {
+  width: 90%;
+}
 .home .walk .walk-img .elmobump:hover {
-  display: relative;
-  bottom: 10px;
+  position: relative;
+  transform: translate(5%, -5%);
 }
